@@ -20,28 +20,24 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="7B4-lM-6zY">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Altiscan" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iJC-iK-Olg">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Altiscan" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iJC-iK-Olg">
                                 <rect key="frame" x="177" y="280" width="60.5" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fvh-TK-A2v" userLabel="LineChartBox" customClass="LineChartView" customModule="Charts">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fvh-TK-A2v" userLabel="LineChartBox" customClass="LineChartView" customModule="Charts">
                                 <rect key="frame" x="87" y="384" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZhF-lp-RD8">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZhF-lp-RD8">
                                 <rect key="frame" x="235" y="615" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Current Altitude:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ad4-IU-R1p" userLabel="AltitudeLabel">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current Altitude:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ad4-IU-R1p" userLabel="AltitudeLabel">
                                 <rect key="frame" x="105" y="615" width="126" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -50,10 +46,26 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="iJC-iK-Olg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="177" id="6ZH-B6-k41"/>
+                            <constraint firstItem="iJC-iK-Olg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="236" id="6bQ-5U-Gks"/>
+                            <constraint firstItem="fvh-TK-A2v" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="8LO-1S-WsE"/>
+                            <constraint firstItem="fvh-TK-A2v" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8eh-dB-4pq"/>
                             <constraint firstAttribute="bottom" secondItem="7B4-lM-6zY" secondAttribute="bottom" id="9dX-9z-948"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ZhF-lp-RD8" secondAttribute="trailing" constant="137" id="B4t-mp-cg5"/>
+                            <constraint firstItem="fvh-TK-A2v" firstAttribute="top" secondItem="iJC-iK-Olg" secondAttribute="bottom" constant="83" id="Ghv-hs-wzz"/>
+                            <constraint firstItem="Ad4-IU-R1p" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="105" id="K71-l8-Wr8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="iJC-iK-Olg" secondAttribute="trailing" constant="176.5" id="Lub-y7-e8H"/>
+                            <constraint firstItem="fvh-TK-A2v" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="87" id="NUd-dU-sOn"/>
                             <constraint firstItem="7B4-lM-6zY" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="T3d-k4-ipT"/>
+                            <constraint firstItem="ZhF-lp-RD8" firstAttribute="top" secondItem="fvh-TK-A2v" secondAttribute="bottom" constant="103" id="W3g-47-kwy"/>
                             <constraint firstItem="7B4-lM-6zY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="e9S-xA-4Cw"/>
                             <constraint firstAttribute="trailing" secondItem="7B4-lM-6zY" secondAttribute="trailing" id="evC-Vs-xaa"/>
+                            <constraint firstItem="ZhF-lp-RD8" firstAttribute="top" secondItem="fvh-TK-A2v" secondAttribute="bottom" constant="103" id="gtN-t7-Bdr"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Ad4-IU-R1p" secondAttribute="bottom" constant="226" id="lO5-Na-E37"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ZhF-lp-RD8" secondAttribute="bottom" constant="226" id="s16-ig-5mh"/>
+                            <constraint firstItem="fvh-TK-A2v" firstAttribute="top" secondItem="iJC-iK-Olg" secondAttribute="bottom" constant="83" id="tJl-6p-UM5"/>
+                            <constraint firstItem="ZhF-lp-RD8" firstAttribute="leading" secondItem="Ad4-IU-R1p" secondAttribute="trailing" constant="4" id="vBG-oY-yWv"/>
+                            <constraint firstItem="Ad4-IU-R1p" firstAttribute="top" secondItem="fvh-TK-A2v" secondAttribute="bottom" constant="103" id="ybE-Ug-SRJ"/>
                         </constraints>
                     </view>
                     <connections>
@@ -64,7 +76,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="20" y="82"/>
+            <point key="canvasLocation" x="18.840579710144929" y="81.696428571428569"/>
         </scene>
     </scenes>
     <resources>
